@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/owl.carousel.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
+
+
+    <style>
+        .banner img {
+            width: 100%;
+            /* position: fix ed; */
+
+            /* overflow: hidden; */
+        }
+
+
+
+        .banner {
+            height: 350px;
+            overflow: hidden;
+            background-attachment: fixed;
+            background-image: url(about-title-img1.jpg);
+        }
+
+        .banner-content {
+            /* position: absolute; */
+            /* top: 150px;
+            left: 650px; */
+            color: white;
+            display: flex;
+            margin-top: 155px;
+            justify-content: center;
+
+        }
+
+        .banner-content h1 {
+            font-size: 50px
+        }
+
+        .section-2 button {
+            /* background-color: rgb(4, 4, 4); */
+            padding: 18px 40px;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-size: 15px;
+            margin-right: 8px;
+            cursor: pointer;
+            border: 1px rgb(185, 179, 179) solid;
+
+        }
+
+        /* .activebtn {
+            background: black;
+            color: white !important;
+        } */
+
+
+
+        .learn-more {
+            display: flex;
+            align-items: center;
+        }
+
+        #services-p {
+            display: none;
+        }
+
+        #history-p {
+            display: none;
+        }
+
+        .white {
+            background-color: rgb(3, 3, 3);
+            color: rgb(254, 249, 249) !important;
+        }
+
+        .item {
+            width: 100%;
+            height: 50px;
+            background-color: aqua;
+        }
+
+        .team-member-img img {
+            border-radius: 50%;
+        }
+
+        .our-team-head-part-2 p {
+            font-size: 20px;
+            color: gray;
+        }
+
+        @media (max-width:992px) {
+            button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .section-2 {
+                padding: 0% 20px !important;
+            }
+
+            .section-2 .part-1 {
+                padding-bottom: 0px !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <section class="section-1">
+            <div class="header2"></div>
+
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="banner">
+
+                        <div class="banner-content">
+                            <h1>ABOUT US</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-2 p-5">
+            <div class="row">
+                <div class="col-lg-6 p-5 part-1"><img src="about-img-1.jpg" alt="" width="100%"></div>
+                <div class="col-lg-6 p-5 part-2">
+                    <div class="row">
+                        <div class="col-lg-12 p-0">
+                            <button onclick="f1()" class="white">About us</button>
+                            <button onclick="f2()">Services</button>
+                            <button onclick="f3()">History</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 my-4 p-0" id="aboutus-p">
+                            <p>Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu
+                                volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh.
+                                Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et
+                                malesuada fames ac ante ipsum primis in faucibus. Aliquam eu lorem nibh. Mauris ex
+                                dolor, rutrum in odio vel, suscipit ultrices nunc. Cras ipsum dolor, eleifend et nisl
+                                vel, tempor molestie nibh.</p>
+                        </div>
+                        <div class="col-lg-12 my-4 p-0" id="services-p">
+                            <p>Cras ipsum dolor, eleifend et nisl vel, tempor molestie nibh.
+                                In hac
+                                habitasse platea dictumst. Proin nec blandit ligula. Donec volutpat leo turpis, vel
+                                accumsan
+                                nunc convallis id. Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin
+                                tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla
+                                enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet
+                                purus. Interdum et malesuada fames ac ante ipsum.</p>
+
+                        </div>
+                        <div class="col-lg-12 my-4 p-0" id="history-p">
+                            <p>Donec volutpat leo turpis, vel accumsan nunc convallis id.
+                                Vestibulum
+                                ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat
+                                mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Cras
+                                ipsum
+                                dolor, eleifend et nisl vel, tempor molestie nibh. In hac habitasse platea dictumst.
+                                Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et
+                                malesuada fames ac ante ipsum primis. Proin nec.</p>
+
+                        </div>
+                        <div class="col-lg-12 ">
+                            <div class="learn-more"> <span>LEARN MORE </span><span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section-3 our-team">
+            <div class="row">
+                <div class="col-lg-12 text-center p-4 our-team-part-1">
+                    <h2>MEET OUR TEAM OF EXPERTS</h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center our-team-head-part-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut
+                        ullamcorper leo, eget euismod
+                        orci.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 p-5 wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="row">
+                        <div class="col-lg-12 p-5 team-member-img">
+                            <img src="team-member-1-550x550.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <h6>DEBBIE BRIDGES</h6>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>CEO</p>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>Aliquam eu lorem nibh. Mauris ex dolor, rutrum in odio vel, suscipit ultrices nunc. Cras
+                                ipsum dolor, eleifend et nisl vel, tempor molestie nibh.</p>
+                        </div>
+                        <div class="col-lg-12"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-5 wow fadeInRight" data-wow-delay="0.75s">
+                    <div class="row">
+                        <div class="col-lg-12 p-5 team-member-img">
+                            <img src="team-member-2-550x550.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <h6>THOMAS ROBINSON</h6>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>ART DIRECTOR</p>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>Aliquam eu lorem nibh. Mauris ex dolor, rutrum in odio vel, suscipit ultrices nunc. Cras
+                                ipsum dolor, eleifend et nisl vel, tempor molestie nibh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-5 wow fadeInRight" data-wow-delay="1s">
+                    <div class="row">
+                        <div class="col-lg-12 p-5 team-member-img">
+                            <img src="team-member-3-550x550.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <h6>MARGARET BROWN</h6>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>BRAND MANAGER</p>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>Aliquam eu lorem nibh. Mauris ex dolor, rutrum in odio vel, suscipit ultrices nunc. Cras
+                                ipsum dolor, eleifend et nisl vel, tempor molestie nibh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-5 wow fadeInLeft" data-wow-delay=".5s">
+                    <div class="row">
+                        <div class="col-lg-12 p-5 team-member-img">
+                            <img src="team-member-4-550x550.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <h6>MARGARET BROWN</h6>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>BRAND MANAGER</p>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>Aliquam eu lorem nibh. Mauris ex dolor, rutrum in odio vel, suscipit ultrices nunc. Cras
+                                ipsum dolor, eleifend et nisl vel, tempor molestie nibh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-5 wow fadeInLeft" data-wow-delay="0.75s">
+                    <div class="row">
+                        <div class="col-lg-12 p-5 team-member-img">
+                            <img src="team-member-5-550x550.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <h6>MARGARET BROWN</h6>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>BRAND MANAGER</p>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>Aliquam eu lorem nibh. Mauris ex dolor, rutrum in odio vel, suscipit ultrices nunc. Cras
+                                ipsum dolor, eleifend et nisl vel, tempor molestie nibh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-5 wow fadeInLeft" data-wow-delay="1s">
+                    <div class="row">
+                        <div class="col-lg-12 p-5 team-member-img">
+                            <img src="team-member-6-550x550.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <h6>MARGARET BROWN</h6>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>BRAND MANAGER</p>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <p>Aliquam eu lorem nibh. Mauris ex dolor, rutrum in odio vel, suscipit ultrices nunc. Cras
+                                ipsum dolor, eleifend et nisl vel, tempor molestie nibh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="owl.carousel.js"></script>
+
+    <script>
+
+
+        function f1() {
+            document.getElementById("aboutus-p").style.display = 'block';
+            document.getElementById("services-p").style.display = 'none';
+            document.getElementById("history-p").style.display = 'none';
+        }
+        function f2() {
+            document.getElementById("aboutus-p").style.display = 'none';
+            document.getElementById("services-p").style.display = 'block';
+            document.getElementById("history-p").style.display = 'none';
+        }
+        function f3() {
+            document.getElementById("aboutus-p").style.display = 'none';
+            document.getElementById("services-p").style.display = 'none';
+            document.getElementById("history-p").style.display = 'block';
+        }
+
+        $(document).ready(function () {
+
+            $('button').click(function () {
+                $(this).addClass('white').siblings().removeClass('white');
+            });
+
+
+
+        });
+
+        $('document').ready(function () {
+
+            $('.header2').load("header.html");
+            $('.footer').load("footer.html");
+
+
+        })
+
+
+    </script>
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
